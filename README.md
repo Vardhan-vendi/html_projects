@@ -1,2 +1,2 @@
 # html_projects
-this are my first practice codes
+this are my first practice code on html,css,js
