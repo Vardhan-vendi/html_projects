@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+   
+}
+body{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background: linear-gradient(rgb(190, 188, 188),rgb(255, 255, 255));
+}
+.TnavBar{
+    height: 60px;
+    width: 100%;
+    background-color: #0F1111;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.logo-box{
+    height: 50px;
+    width: 110px;
+    border: 1.5px solid transparent;
+    padding: 5px 7px;
+   
+}
+
+.logo{
+    background-image: url("amazon_logo22.png");
+    background-size:cover;
+    height: 40px;
+    width: 100px;
+}
+
+
+
+.address{
+    width: 90px;
+    height: 50px;
+    display: flex;
+    gap: 1.5px;
+    border: 1.5px solid transparent;
+    align-items: center;
+    padding: 0 6px;
+}
+
+
+.searchBar{
+    height: 40px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+    color: #cccccc;
+    border-radius: 4px;
+    border: 2px solid transparent;
+    
+}
+.searchBar:hover{
+    border: 2px solid rgba(255, 149, 0,0.8);
+}
+
+.selectItems{
+    height: 40px;
+    width: 3.5rem;
+    display: flex;
+    align-items: center; 
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    background-color: #cccccc;
+    
+}
+.selectItems select{
+    border: 0;
+    outline: none;
+    font-size: 0.8rem;
+    background-color: #cccccc;
+    
+}
+.search{
+    height: 46px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    width: 100%;
+}
+.searchIcon{
+    width: 3.2rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: rgb(238, 146, 16);
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.signIn{
+    color: #ffffff;
+    width: 120px;
+    border: 2px solid transparent;
+    height: 90%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+.signIn .first{
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif-sans;
+}
+.signIn .second{
+    font-size: 0.9rem;
+    font-family: Verdana;
+    font-weight:600;
+}
+.returns{
+    color: #ffffff;
+    width: 100px;
+    border: 2px solid transparent;
+    height: 90%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+.returns .first{
+    font-size: 0.9rem;
+    font-family: 'Times New Roman', Times, serif-sans;
+}
+.returns .second{
+    font-size: 0.9rem;
+    font-family: Verdana;
+    font-weight:600;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    font-family: verdana;
+    border: 2px solid transparent;
+    height: 90%;
+}
+.cartIcon i{
+    font-size: 1.5rem;
+}
+.cart .text{
+    padding-top: 7px;
+}
+.region{
+    height: 90%;
+    width: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 2px;
+    border: 2px solid transparent;
+}
+.region .flag{
+    background-image: url("india_square_icon_64.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 30px;
+    margin-bottom: 5px;
+   
+}
+.region p{
+    padding-bottom: 6px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.region p i{
+    font-size: 12px;
+}
+
+.logo-box:hover , .address:hover, .signIn:hover,.returns:hover,.cart:hover,.region:hover,.border:hover{
+    border-color: white;
+    border-radius: 2px;
+}
+.lowNavBar{
+    
+    height: 39px;
+    width: 100%;
+    background-color: rgba(30, 40, 54, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial;
+    font-size: 14px;
+}
+.lowNavBar .left{
+    width: 50%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    padding: 2px;
+}
+.lowNavBar .right{
+    margin-left: 32%;
+    padding: 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.lowNavBar .left .border{
+   padding: 6px;
+    
+}
+.border{
+    border: 1px solid transparent;
+}
+
+/* content */
+
+.content{
+    color: #0F1111;
+    width: 100%;
+    height: 690px;
+    background-image: url("bodyimage.jpg");
+    background-size: cover;
+    display: flex;
+    
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding:0px 1rem ;
+    gap: 1.2rem;
+}
+.content img{
+    width: 95%;
+    height: 50%;
+    margin: 1px 5px;
+}
+.content p{
+   margin: 19px 12px;
+    font-size: 1.2rem;
+    font-family: Arial;
+    font-weight: 600;
+}
+.special{
+    margin-top: 20rem;
+    width: 45%;
+    height: 67%;
+    background-color: white;
+    box-shadow: 1px 1px 4px #c5c7c7;
+   
+}
+
+.a1 p,.a1 div{
+    color: #0F1111;
+    
+}
+
+.a1 .row1{
+    display: flex;
+    height: 45%;
+    justify-content: flex-start;
+}
+.row2{
+    display: flex;
+    align-items: center;
+    height: 37%;
+}
+.move{
+    margin-left: 20px;
+    font-family: Arial;
+    font-size: 0.8rem;
+}
+.row2 .hgt{
+   margin-bottom: 30px;
+}
+
+.row2+div{
+    transform: translate(2%,-20%);
+    font-size: 0.9rem;
+   color: #007185;
+    cursor: pointer;
+   
+}
+.btmText{
+    cursor: pointer;
+    height: 20%;
+    position: relative;
+    left: 10px;
+   font-weight: 500;
+   font-size: 50px;
+    color: #007185;
+}
+.btmText:hover{
+    color: rgb(241, 113, 21);
+}
+
+
+.content2{
+    width: 100%;
+    height: 1200px;
+    
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+.content2 .r1{
+    height: 50%;
+    width: 95%;
+  
+}
+.content2 .r2{
+    height: 50%;
+    width: 95%;
+   
+}
+.r1,.r2{
+    display: flex;
+    gap: 1.2rem;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    height: 97%;
+    
+    background-color: white;
+}
+.col .img{
+   
+    padding: 6px;
+    width: 90%;
+    height: 60%;
+}
+.col .single{
+    width: 100%;
+    height: 100%;
+    padding-left: 8px;
+}
+.c1col{
+    display: flex;
+    justify-content: space-evenly;
+}
+.col div{
+    color: black;
+    font-size: 13px;
+}
+
+.col .details{
+    padding: 4px 20px;
+    font-family: Arial;
+    font-size: 1.3rem;
+    font-weight: 600;
+    height: 20%;
+}
+.hgt{
+    cursor: pointer;
+}
+.col .c1col{
+    height: 100%;
+}
+.move1{
+    transform: translateX(5%);
+    font-size: 1rem;
+}
+.scroller{
+    width: 100%;
+    height: 400px;
+    
+    overflow-x: scroll;
+    display: flex;
+    align-items: center;
+}
+
+.scrollImg{
+    width: 25%;
+    height: 100%;
+}
+
+
+#aside{
+    width:100%;
+    height: 140px;
+    /* border: 2px solid gray; */
+    border-bottom: 1px solid rgb(179, 177, 177);
+    border-top: 1px solid rgb(178, 175, 175);
+    color: #0F1111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.6rem;
+}
+.recommendation{
+    color: #0F1111;
+}
+.signInBtn{
+    color: #0F1111;
+    width: 16rem;
+    height: 1.8rem;
+    background-color: rgb(255, 183, 0);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 0.86rem;
+    font-weight: 550;
+    cursor: pointer;
+}
+.linkText{
+    color: #0F1111;
+    font-size: 14px;
+}
+.linkText .link1{
+    color:#007185;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.footer{
+    width: 100%;
+    height: 500px;
+   
+    display: flex;
+    flex-direction: column;
+    
+}
+.back{
+    color: black;
+    width: 100%;
+    height: 12%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3847;
+}
+.back a{
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 14px;
+}
+.about{
+    background-color: #232F3F;
+   
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+.about .f{
+    
+    width: 20%;
+    height: 100%;
+    padding: 20px 30px;
+  
+}
+.about .f p:first-child{
+    font-size: 0.9rem;
+    padding-bottom:20px;
+    color: white;
+    font-family: Arial;
+    font-weight: 600;
+    
+}
+.about .f p:not(:first-child){
+    color: #c5c7c7;
+    padding-bottom: 18px;
+}
+.about .f p:not(:first-child):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.foot{
+    height: 15%;
+    width: 100%;
+    background-color: #232F3F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    row-gap: 7px;
+}
+.foot .div1{
+    display: flex;
+    gap: 15px;
+}
+.foot .div1 p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
